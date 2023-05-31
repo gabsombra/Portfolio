@@ -2,15 +2,30 @@
     overflow: hidden;
     position: fixed;
     bottom: 0;
+    top: auto;
     width: 100%;
+
     
-        nav {
+@include breakpoint-up(medium) {
+        bottom: auto;
+        top: 0;
+}
+     
+
+    nav {
         background-color: $accentOrange;
         border-radius: 6px;
         padding: 5px 10px;
-        margin:2px 5px 5px 5px;
-        align-items: center;
+        margin: 2px 5px 5px 5px;
+
+        @include breakpoint-up(medium) {
+          background-color: $pitchBlack;
+          
+          a{
+          color: $accentOrange;
+            }
         }
+    }
 
         &__menu {
         
@@ -37,3 +52,5 @@
             }
     }
 }
+
+
