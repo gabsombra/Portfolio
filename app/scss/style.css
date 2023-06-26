@@ -35,7 +35,7 @@
   }
 }
 .fade-out {
-  animation: fade-out 300ms ease-in-out forwards;
+  animation: fade-out 1000ms ease-in-out backwards;
 }
 
 html {
@@ -53,7 +53,7 @@ body {
   font-family: "Syne", "Work Sans", sans-serif;
   font-size: 1.125rem;
   line-height: 1.3;
-  background-color: hsl(0, 0%, 38%);
+  background-color: hsl(0, 0%, 91%);
 }
 
 .flex {
@@ -92,6 +92,7 @@ a, a:visited {
 }
 
 .container {
+  overflow: hidden;
   background: hsl(0, 0%, 96%);
   border-radius: 0.375rem;
   padding: 0.625rem;
